@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>购物车</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" href="css/bootstrap-spinner.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Shoplist Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Hind:400,500,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/simpleCart.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.spinner.min.js"></script>
+</head>
+<body>
+<!--header strat here-->
+<div class="header">
+    <div class="container">
+        <div class="header-main">
+            <div class="top-nav">
+                <div class="content white">
+                    <nav class="navbar navbar-default" role="navigation" style="width: 630px">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="navbar-brand logo">
+                                <a href="index.html"><img src="images/logo1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!--/.navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">幽然小亭</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">新品推荐<b class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <li><h4>类型</h4></li>
+                                                    <li><a href="product.html">玫瑰长盒</a></li>
+                                                    <li><a href="product.html">玫瑰手捧</a></li>
+                                                    <li><a href="product.html">玫瑰花桶</a></li>
+                                                    <li><a href="product.html">玫瑰水晶花盒</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <li><h4>系列</h4></li>
+                                                    <li><a href="product-m.html">经典永续</a></li>
+                                                    <li><a href="product-m.html">恒久真爱</a></li>
+                                                    <li><a href="product-m.html">爱在满怀</a></li>
+                                                    <li><a href="product-m.html">全世爱</a></li>
+                                                    <li><a href="product-m.html">for all love</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <li><h4>规格</h4></li>
+                                                    <li><a href="product-k.html">19支80cm</a></li>
+                                                    <li><a href="product-k.html">11支80cm</a></li>
+                                                    <li><a href="product-k.html">19支40cm</a></li>
+                                                    <li><a href="product-k.html">11支40cm</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="product.html">鲜花玫瑰</a></li>
+                                <li><a href="product-m.html">永生花</a></li>
+                                <li><a href="product-k.html">特别定制</a></li>
+                                <li><a href="aboutus.html">品牌文化</a></li>
+                            </ul>
+                        </div>
+                        <!--/.navbar-collapse-->
+                    </nav>
+                    <!--/.navbar-->
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search">
+                    <div class="cart box_1">
+                        <a href="checkout.html">
+                            <h3>
+                                <img src="images/cart.png" alt=""/>
+                                <div class="total">
+                                    <span class="simpleCart_total"></span></div>
+                            </h3>
+                        </a>
+                        <p><a href="javascript:;" class="simpleCart_empty">清空购物车</a></p>
+                    </div>
+                    <div class="head-signin">
+                        <h5><a href="signup.html"><i class="hd-regi"></i>注册</a></h5>
+                    </div>
+                    <div class="head-signin">
+                        <h5><a href="login.html"><i class="hd-dign"></i>登录</a></h5>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--header end here-->
+<!--start-ckeckout-->
+<div class="ckeckout">
+    <div class="container">
+        <div class="ckeckout-top" style="margin-top: -25px">
+            <div class=" cart-items heading">
+                <h1>我的购物车</h1>
+                <div class="in-check">
+                    <ul class="unit">
+                        <li><span>商品图片</span></li>
+                        <li><span>商品名称</span></li>
+                        <li><span>单价</span></li>
+                        <li><span>数量</span></li>
+                        <li><span>小计</span></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <ul class="cart-header simpleCart_shelfItem">
+                        <div class="close1"></div>
+                        <li class="ring-in"><a href="single.html"><img src="images/rose1.png" class="img-responsive"
+                                                                       style="width: 80px" alt=""></a>
+                        </li>
+                        <li><span style="width: 70%">爱在满怀 - 经典99支情动 80cm手捧</span></li>
+                        <li><span id="price" class="item_price">￥6999.0</span></li>
+                        <!--<li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>				-->
+                        <li><span>
+                            <div class="input-group spinner" data-trigger="spinner" id="spinner" style="width: 70%">
+                                <input id="count" type="text" class="form-control" value="1" data-max="100" data-min="1"
+                                       data-step="1">
+                                <div class="input-group-addon">
+                                    <a href="javascript:;" class="spin-up" data-spin="up"><i
+                                            class="icon-sort-up"></i></a>
+                                    <a href="javascript:;" class="spin-down" data-spin="down"><i
+                                            class="icon-sort-down"></i></a>
+                                </div>
+                            </div>
+                        </span>
+                        </li>
+                        <li><span class="item_price" id="total">￥6999.0</span></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-md-offset-10 banner-right simpleCart_shelfItem">
+                    <span style="margin-top: -25px">总金额：</span>
+                    <span id="total_pay">￥6999.0</span>
+                    <ul class="bann-btns" style="margin-top: 30px">
+                        <li><a href="#" class="item_add">立即结算</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-ckeckout-->
+<!--footer strat here-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="ftr-grids-block">
+                <div class="col-md-2 footer-grid">
+                    <ul>
+                        <li><h3 style="color: #ffffff">新手指南</h3></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">会员尊享</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-grid">
+                    <ul>
+                        <li><h3 style="color: #ffffff">售后服务</h3></li>
+                        <li><a href="#">退款说明</a></li>
+                        <li><a href="#">保养物语</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-grid">
+                    <ul>
+                        <li><h3 style="color: #ffffff">物流配送</h3></li>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">配送服务</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-grid">
+                    <ul>
+                        <li><h3 style="color: #ffffff">关于我们</h3></li>
+                        <li><a href="aboutus.html">品牌介绍</a></li>
+                        <li><a href="aboutus.html">销售渠道</a></li>
+                        <li><a href="aboutus.html">联系我们</a></li>
+                        <li><a href="aboutus.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-1 footer-grid-icon">
+                    <h1>YOROROOM'</h1>
+                    <h2 style="margin-top: 10px">幽然小亭</h2>
+                    <a id="weixin" href="#" data-placement="top" data-toggle="popover" style="margin: 10px"><img
+                            src="images/wechat.png"></a>
+                    <span>点击关注</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="copy-rights">
+                <p>Copyright &copy; 2018.YOROROOM All rights</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end here-->
+<script>
+    $('#weixin').popover({
+        trigger: 'hover',
+        html: true,
+        content: "<img src='images/ma.png' style='width: 200px'>"
+    });
+
+    $(document).ready(function (c) {
+        $('.close1').on('click', function (c) {
+            $('.cart-header').fadeOut('slow', function (c) {
+                $('.cart-header').remove();
+            });
+        });
+    });
+    
+    $(".icon-sort-up").click(f);
+    $(".icon-sort-down").click(f);
+
+    function f() {
+        var count = $("#count").val();
+        var price = $("#price").text();
+        price = price.substr(1, price.length);
+        price = parseFloat(price);
+        count = parseFloat(count);
+        $("#total").text("￥" + (price * count) + ".0");
+        $("#total_pay").text("￥" + (price * count) + ".0");
+    }
+</script>
+</body>
+</html>
